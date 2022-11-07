@@ -1,0 +1,23 @@
+@import 'core';
+@import './unique';
+@import 'bubles';
+@import 'mouse';
+@import 'preloader';
+
+
+.big-wrapper-index{
+    width: 100vw;
+    height: 100vh;
+    background: url(../pics/jellyfisch.webp) center center / cover no-repeat;
+    overflow: hidden !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+// .index{
+    
+// }
+
+

@@ -1,0 +1,17 @@
+{
+  "name": "blauer-planet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "built-index": "sass ./src/scss/index.scss ./public/css/index.css --style=compressed --watch",
+    "built-interesting-facts": "sass ./src/scss/interesting-facts.scss ./public/css/interesting-facts.css --style=compressed --watch",
+    "built-generally": "sass ./src/scss/generally.scss ./public/css/generally.css --style=compressed --watch",
+    "built-ocean": "sass ./src/scss/ocean.scss ./public/css/ocean.css --style=compressed --watch",
+    "built-dictionary": "sass ./src/scss/dictionary.scss ./public/css/dictionary.css --style=compressed --watch",
+    "built-gallery": "sass ./src/scss/gallery.scss ./public/css/gallery.css --style=compressed --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

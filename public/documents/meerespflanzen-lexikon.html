@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blauer Planet - Meerespflanzen Lexikon</title>
+    <link rel="stylesheet" href="../css/dictionary.css">
+    <style>
+        .dictionary_start-section{
+            background: url(../pics/meerespflanze-1.webp);
+        }
+    </style>
+
+    <!-- image preloader -->
+    <script>
+        let imageArray = [
+            '../pics/meerespflanze-1.webp'
+        ]
+
+        for(let i = 0; i < imageArray.length; i ++){
+            let image = new Image()
+            image.src = imageArray[i]
+
+            // console.log(image)
+        }
+    </script>
+
+</head>
+<body>
+    <div class="big-container-dictionary">
+        <div class="dictionary_start-section">
+            <header class="unique_header">
+                <h1 class="unique_h1">
+                    <a href="../../index.html">
+                        Blauer Planet
+                    </a>  
+                </h1>
+    
+                <button class="unique_hamburger-button">
+                    <span class="unique_hamburger-line"></span>
+                    <span class="unique_hamburger-line"></span>
+                    <span class="unique_hamburger-line"></span>
+                </button>
+    
+                <nav class="unique_nav">
+                    <h3 class="hidden">Hauptnavigation</h3>
+                    <ul class="unique_nav_ul">
+                        <li>
+                            <a href="./wissenswertes.html" >Wissenswertes</a>
+                        </li>
+                        <li>
+                            <a href="./die-7-meere.html">die 7 Meere</a>
+                            <button class="unique_open-sub-menu-button">+</button>
+                            <ul class="unique_nav_sub-ul">
+                                <li>
+                                    <a href="./die-7-meere.html" >Allgemeines</a>
+                                </li>
+                                <li>
+                                    <a href="./atlantischer-ozean.html">Atlantischer Ozean</a>
+                                </li>
+                                <li>
+                                    <a href="./indischer-ozean.html">Indischer Ozean</a>
+                                </li>
+                                <li>
+                                    <a href="./pazifischer-ozean.html">Pazifischer Ozean</a>
+                                </li>
+                                <li>
+                                    <a href="./arktisches-mittelmeer.html">Arktisches Mittelmeer</a>
+                                </li>
+                                <li>
+                                    <a href="./amerikanisches-mittelmeer.html">Amerikanisches Mittelmeer</a>
+                                </li>
+                                <li>
+                                    <a href="./australasiatisches-mittelmeer.html">Australasiatisches Mittelmeer</a>
+                                </li>
+                                <li>
+                                    <a href="./europaeisches-mittelmeer.html">Europäisches Mittelmeer</a>
+                                </li>      
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./meerestiere.html">Meerestiere</a>
+                            <button class="unique_open-sub-menu-button">+</button>
+                            <ul class="unique_nav_sub-ul">
+                                <li>
+                                    <a href="./meerestiere.html">Allgemeines</a>
+                                </li>
+                                <li>
+                                    <a href="./meerestiere-lexikon.html">Lexikon</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./meerespflanzen.html" class="current-page">Meerespflanzen</a>
+                            <button class="unique_open-sub-menu-button">+</button>
+                            <ul class="unique_nav_sub-ul">
+                                <li>
+                                    <a href="./meerespflanzen.html">Allgemeines</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="current-page">Lexikon</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./galerie.html">Galerie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="dictionary_h2-container">
+            <h2 class="dictionary_h2">Meerespflanzen Lexikon</h2>
+            <h2 class="dictionary_h2">Meerespflanzen Lexikon</h2>
+        </div>
+
+        <main class="dictionary">
+            <figure class="dictionary_alphabet-selection">
+                <figcaption class="dictionary_alphabet-selection_selected drop-down">Alle</figcaption>
+                <ul class="dictionary_alphabet-selection_alphabet">
+                   <li class="dictionary_alphabet-selection_alphabet_search-li">
+                        <button class="dictionary_alphabet-selection_alphabet_search drop-down">
+                            <span>Einzelsuche</span>
+                            <span>
+                                <img src="../pics/search.png" alt="eine Lupe">
+                            </span>
+                        </button>
+                   </li> 
+                </ul>
+            </figure>
+
+
+            <form class="dictionary_search">
+                <input type="text" name="search-value" list="plants-list">
+
+                <datalist class="dictionary_search_animals" id="plants-list"></datalist>
+
+                <button type="submit">
+                    <!-- <img src="../pics/search.png" alt="eine Lupe"> -->
+                    Suchen
+                </button>
+            </form>
+
+            <div class="section-container">
+        <!-- B -->
+             <section class="dictionary_section" data-section-alphabet="B">
+
+                <!-- Blasentang -->
+                <div class="dictionary_card">
+                        <img src="../pics/blasentang.webp" alt="Blasentang">
+    
+                        <div class="dictionary_card_heading-area">
+                            <h3>Blasentang</h3>
+    
+                            <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                <img src="../pics/dots.png" alt="drei Punkte">
+                            </button>
+                        </div>
+    
+                        <div class="dictionary_card_content">
+                            <p>
+                                Wie alle Algen hat er keine Blätter und Wurzeln, sondern besteht aus dem verzweigten Thallus und einer Haftplatte. Der Thallus ist 10 - 30 cm lang und olivgrün bis braun-schwarz gefärbt. Wenn man eine Braunalge mit paarig angeordneten Gasblasen findet, die beiderseits einer "Mittelrippe" stehen, ist es bei uns meistens Blasentang.
+                            </p>
+
+                            <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                <img src="../pics/less.png" alt="drei Bindestriche">
+                            </button>
+                        </div>
+                </div>
+            </section>
+
+        <!-- F -->
+            <section class="dictionary_section" data-section-alphabet="F">
+
+                <!-- Fingertang -->
+                   <div class="dictionary_card">
+                        <img src="../pics/fingertang.webp" alt="Fingertang">
+    
+                        <div class="dictionary_card_heading-area">
+                            <h3>Fingertang</h3>
+    
+                            <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                <img src="../pics/dots.png" alt="drei Punkte">
+                            </button>
+                        </div>
+    
+                        <div class="dictionary_card_content">
+                            <p>
+                                Auf tiefliegenden Felsen im Helgoländer Felswatt oder angespült am Strand findet man mitunter den bis zu 2 m langen Fingertang. Er ist von Kanada bis Spitzbergen und von den Kanaren bis in die westliche Ostsee verbreitet. Sein Wuchsort sind Felsen knapp unterhalb der Gezeitenzone, wo er noch viel Licht bekommt, aber höchstens kurz trockenfällt.
+                            </p>
+    
+                            <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                <img src="../pics/less.png" alt="drei Bindestriche">
+                            </button>
+                        </div>
+                   </div>
+                </section>
+
+        <!-- K -->
+            <section class="dictionary_section" data-section-alphabet="K">
+
+            <!-- Knotentang -->
+               <div class="dictionary_card">
+                    <img src="../pics/knotentang.webp" alt="Knotentang">
+
+                    <div class="dictionary_card_heading-area">
+                        <h3>Knotentang</h3>
+
+                        <button class="dictionary_card_button-more" onclick="openContent(this)">
+                            <img src="../pics/dots.png" alt="drei Punkte">
+                        </button>
+                    </div>
+
+                    <div class="dictionary_card_content">
+                        <p>
+                            Der Knotentang ist bei uns die Braunalge mit den größten Schwimmblasen. Anders als beim Blasentang, dessen Blasen paarig beiderseits der Mittelrippe angeordnet sind, sitzen die Gasblasen beim Knotentang einzeln in der Mitte des bis 1,5 cm breiten Stängels. Er hat sozusagen Knoten im Stängel, daher der Name.
+                        </p>
+
+                        <p>
+                            Ab August bildet der Knotentang keulenförmige, mit Gallerte gefüllte Seitenblasen, in denen Keimzellen entstehen. Diese verlassen durch Poren die Fruchtkörper und schwimmen im Meer umher. Erfolgreiche Zellen bilden auf Hartgrund eine Haftscheibe. Aus ihr wächst der Algenstiel heraus, der nach 2 Jahren die erste Blase bildet. Alljährlich im Frühjahr wächst eine weitere Blase - die Alge kann 15 Jahre werden!
+                        </p>
+
+                        <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                            <img src="../pics/less.png" alt="drei Bindestriche">
+                        </button>
+                    </div>
+               </div>
+
+        <!-- P -->
+             <section class="dictionary_section" data-section-alphabet="P">
+
+                <!-- Phytoplankton -->
+                   <div class="dictionary_card">
+                        <img src="../pics/meerespflanze-6.webp" alt="Meerespflanze">
+    
+                        <div class="dictionary_card_heading-area">
+                            <h3>Phytoplankton</h3>
+    
+                            <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                <img src="../pics/dots.png" alt="drei Punkte">
+                            </button>
+                        </div>
+    
+                        <div class="dictionary_card_content">
+                            <p>
+                                Insgesamt leben in der Deutschen Bucht ca. 450 Arten von Planktonalgen. In jedem Schluck Nordseewasser schwimmen Tausende von Algenzellen umher, besonders von März bis Mai. Danach sind die Nährsalze weitgehend aufgebraucht und das Algenwachstum läßt nach. Im Frühjahr dominieren Kieselalgen, im Sommer meist Panzer-Geißelalgen (Dinoflagellaten), zu denen auch einige giftige Arten gehören.
+                            </p>
+
+                            <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                <img src="../pics/less.png" alt="drei Bindestriche">
+                            </button>
+                        </div>
+                   </div>
+                </section>
+
+            <!-- S -->
+                <section class="dictionary_section" data-section-alphabet="S">
+
+                    <!-- Seegras -->
+                    <div class="dictionary_card">
+                            <img src="../pics/seegras-3.webp" alt="Seegras">
+        
+                            <div class="dictionary_card_heading-area">
+                                <h3>Seegras</h3>
+        
+                                <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                    <img src="../pics/dots.png" alt="drei Punkte">
+                                </button>
+                            </div>
+        
+                            <div class="dictionary_card_content">
+                                <p>
+                                    Eigentlich ist das Seegras kein Gras, sondern mit den Laichkräutern des Süßwassers verwandt. Trotzdem ist der Name sehr passend, denn bei Flut sind Seegraswiesen eine sonnendurchflutete Unterwasserwelt, die den Wiesen an Land in nichts nachsteht. Fische anstelle von Schmetterlingen huschen umher, das Seegras wogt mit den Wellen statt im Wind, und am Boden und auf den Blättern krabbeln kleine Krebse statt Ameisen umher.
+                                </p>
+
+                                <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                    <img src="../pics/less.png" alt="drei Bindestriche">
+                                </button>
+                            </div>
+                    </div>
+                </section>
+
+            <!-- dummy section for alphabet testing-->
+                <!-- <section class="dictionary_section" data-section-alphabet="Y">
+                </section>
+
+                <section class="dictionary_section" data-section-alphabet="D">
+                </section> -->
+
+            </div><!-- end section container-->
+        </main>
+
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+    </div>
+
+    <script src="../../src/js/dictionary.js"></script>
+    <script src="../../src/js/dictionary-mouse-n-observer.js"></script>
+    <script src="../../src/js/hamburger.js"></script>
+    <script src="../../src/js/header.js"></script>
+    <script src="../../src/js/sub-page-refresh.js"></script>
+   
+</body>
+</html>

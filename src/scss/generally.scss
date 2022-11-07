@@ -1,0 +1,302 @@
+@import 'core';
+@import 'unique';
+@import 'mouse';
+@import 'scroll-bar';
+
+.sub-page_start-section{
+    @include background-image('../pics/horizont.webp');
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 5rem;
+}
+
+.unique{
+    &_header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &_nav_sub-ul{
+        background-color: rgba(255, 255, 255, .6);
+
+        @media screen and (max-width: 1090px) {
+          background-color: transparent;
+        }
+    }
+}
+
+.generally{
+    padding-bottom: 5rem;
+    @include flex-variable(column, nowrap, flex-start, flex-start, center);
+   
+
+    &_slider-container{
+        // @include testing-border-2();
+        width: 60vw;
+        overflow: hidden;
+        // position: relative;
+        // margin: 0 auto;
+        transform: perspective(1000px) rotateX(15deg) rotateY(-5deg);
+        margin-left: 15rem;
+        // border: solid black;
+        // border-width: 5px 0;
+        transition: all 5s;
+        opacity: 0;
+        // box-shadow: 0px 0rem 50px rgba($color: #000000, $alpha: 0.7);
+
+        @media screen and (max-width: 1100px) {
+            width: 75vw;
+            margin-left: 7rem;
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &:hover{
+            transform: perspective(1000px) rotateX(5deg) rotateY(0deg);
+        }
+        
+    }
+
+    &_slider{
+        // @include testing-border-3();
+        margin: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 100%;
+        position: relative;
+        right: 1180%;
+        // height: 100%;
+        @include flex-variable(row, nowrap, flex-start, center, center);
+        animation: slide-to-right 140s infinite linear alternate-reverse;
+        //davor 120
+    }
+
+    & img{
+        width: 100%;
+        // box-shadow: 0px 0rem 5px rgba($color: #000000, $alpha: 0.5) ;
+        flex-shrink: 0;
+    }
+
+    &_blockquote{
+        // @include testing-border-2();
+        align-self: flex-end;
+        margin: 9rem 5rem 7rem;
+        @include flex-variable(column, nowrap, flex-start, flex-start, center);
+        @include blockquote-font();
+        font-size: 2rem;
+        overflow: hidden;
+
+        @media screen and (max-width: 1100px) {
+            font-size: 1.7rem;
+            margin: 8rem 2rem 6rem;
+        }
+
+        @media screen and (max-width: 900px) {
+            font-size: 1.5rem;
+            // margin: 8rem 2rem 6rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            font-size: 1.2rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1rem;
+        }
+
+        & span{
+            margin-bottom: 1rem;
+            transition: all 2s;
+            width: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            opacity: 1;
+
+            @media screen and (max-width: 900px) {
+               white-space: normal;
+            }
+        }
+
+        &:nth-of-type(odd){
+            align-self: flex-end;
+
+            & span{
+                background-color: #8BD3CD;
+            }
+
+            @media screen and (max-width: 650px) {
+                margin-top: 5rem;
+            }
+        }
+
+        &:nth-of-type(even){
+            align-self: flex-start;
+            margin-top: 7rem;
+
+            @media screen and (max-width: 1100px) {
+                margin-top: 5rem;
+            }
+
+            @media screen and (max-width: 900px) {
+                margin-top: 1rem;
+            }
+
+            @media screen and (max-width: 650px) {
+                margin-top: 0;
+            }
+
+            & span{
+                background-color: #EAE5DE;  
+            }
+        }
+    }
+
+    &_section-right,
+    &_section-left{
+        // @include testing-border-2();
+        width: 80vw;
+        // overflow: hidden;
+        min-height: 30rem;
+
+        @media screen and (max-width: 1100px) {
+            width: 95vw;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 99vw;
+            min-height: 15rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            width: 95vw;
+            min-height: 5rem;
+        }
+
+        & img{
+            width: 40%;
+
+            @media screen and (max-width: 650px) {
+              width: 80%;
+            }
+            
+        }
+
+        &_paragraph-container{
+            width: 60%;
+            padding: 1rem;
+            position: relative;
+            min-height: 20rem;
+            @include flex-row-center();
+            background-color: rgba(255, 255, 255, 0.8);
+            overflow: hidden;
+
+            @media screen and (max-width: 900px) {
+                width: 80%;
+                min-height: 15rem;
+            }
+
+            @media screen and (max-width: 650px) {
+                min-height: 10rem;
+            }
+
+            & p{
+                position: relative;
+                top: 0;
+                transition: all .3s;
+                
+            }
+        }
+    }
+
+    &_section-right{
+        align-self: flex-end;
+        margin-right: 5rem;
+        // overflow: visible;
+        // min-height: 30rem;
+
+        @media screen and (max-width: 1100px) {
+            margin-right: 2rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            margin-top: 2rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            margin-top: 0rem;
+        }
+
+        & img{
+            float: right;
+        }
+
+        &_paragraph-container{
+            // @include testing-border-3();
+            right: -30%;
+            top: 6rem;
+            border-left: 2px solid black;
+
+            @media screen and (max-width: 900px) {
+                top: -8rem;
+                right: -10%;
+            }
+        }
+    }
+
+    &_section-left{
+        align-self: flex-start;
+        margin-left: 5rem;
+        margin-top: 5rem;
+
+        @media screen and (max-width: 1100px) {
+            margin-left: 2rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            margin-top: 2rem;
+        }
+
+        & img{
+            float: left;
+        }
+
+        &_paragraph-container{
+            // @include testing-border-3();
+            right: 30%;
+            top: 6rem;
+            border-right: 2px solid black;
+
+            @media screen and (max-width: 900px) {
+                top: -8rem;
+                right: -10%;
+            }
+            
+        }
+    }
+
+}
+
+.not-in-viewport-opacity{
+    // width: 0 !important;
+    // padding: 0;
+    opacity: 0 !important;
+}
+
+.not-in-viewport-bottom{
+    top: 3rem !important;
+    opacity: 0;
+}
+
+@keyframes slide-to-right{
+    to{
+        right: 0;
+    }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blauer Planet - Meerestiere Lexikon</title>
+    <link rel="stylesheet" href="../css/dictionary.css">
+    
+    <!-- image preloader -->
+    <script>
+        let imageArray = [
+            '../pics/diver.webp'
+        ]
+
+        for(let i = 0; i < imageArray.length; i ++){
+            let image = new Image()
+            image.src = imageArray[i]
+
+            // console.log(image)
+        }
+    </script>
+
+</head>
+<body>
+    <div class="big-container-dictionary">
+        <div class="dictionary_start-section">
+            <header class="unique_header">
+                <h1 class="unique_h1">
+                    <a href="../../index.html">
+                        Blauer Planet
+                    </a>  
+                </h1>
+    
+                <button class="unique_hamburger-button">
+                    <span class="unique_hamburger-line"></span>
+                    <span class="unique_hamburger-line"></span>
+                    <span class="unique_hamburger-line"></span>
+                </button>
+    
+                <nav class="unique_nav">
+                    <h3 class="hidden">Hauptnavigation</h3>
+                    <ul class="unique_nav_ul">
+                        <li>
+                            <a href="./wissenswertes.html" >Wissenswertes</a>
+                        </li>
+                        <li>
+                            <a href="./die-7-meere.html">die 7 Meere</a>
+                            <button class="unique_open-sub-menu-button">+</button>
+                            <ul class="unique_nav_sub-ul">
+                                <li>
+                                    <a href="./die-7-meere.html" >Allgemeines</a>
+                                </li>
+                                <li>
+                                    <a href="./atlantischer-ozean.html">Atlantischer Ozean</a>
+                                </li>
+                                <li>
+                                    <a href="./indischer-ozean.html">Indischer Ozean</a>
+                                </li>
+                                <li>
+                                    <a href="./indischer-ozean.html">Pazifischer Ozean</a>
+                                </li>
+                                <li>
+                                    <a href="./arktisches-mittelmeer.html">Arktisches Mittelmeer</a>
+                                </li>
+                                <li>
+                                    <a href="./amerikanisches-mittelmeer.html">Amerikanisches Mittelmeer</a>
+                                </li>
+                                <li>
+                                    <a href="./australasiatisches-mittelmeer.html">Australasiatisches Mittelmeer</a>
+                                </li>
+                                <li>
+                                    <a href="./europaeisches-mittelmeer.html">Europäisches Mittelmeer</a>
+                                </li>      
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="current-page">Meerestiere</a>
+                            <button class="unique_open-sub-menu-button">+</button>
+                            <ul class="unique_nav_sub-ul">
+                                <li>
+                                    <a href="./meerestiere.html">Allgemeines</a>
+                                </li>
+                                <li>
+                                    <a href="./meerestiere-lexikon.html" class="current-page">Lexikon</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./meerespflanzen.html">Meerespflanzen</a>
+                            <button class="unique_open-sub-menu-button">+</button>
+                            <ul class="unique_nav_sub-ul">
+                                <li>
+                                    <a href="./meerespflanzen.html">Allgemeines</a>
+                                </li>
+                                <li>
+                                    <a href="./meerespflanzen-lexikon.html">Lexikon</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./galerie.html">Galerie</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="dictionary_h2-container">
+            <h2 class="dictionary_h2">Meerestiere Lexikon</h2>
+            <h2 class="dictionary_h2">Meerestiere Lexikon</h2>
+        </div>
+
+        <main class="dictionary">
+            <figure class="dictionary_alphabet-selection">
+                <figcaption class="dictionary_alphabet-selection_selected drop-down">Alle</figcaption>
+                <ul class="dictionary_alphabet-selection_alphabet">
+                   <li class="dictionary_alphabet-selection_alphabet_search-li">
+                        <button class="dictionary_alphabet-selection_alphabet_search drop-down">
+                            <span>Einzelsuche</span>
+                            <span>
+                                <img src="../pics/search.png" alt="eine Lupe">
+                            </span>
+                        </button>
+                   </li> 
+                </ul>
+            </figure>
+
+
+            <form class="dictionary_search">
+                <input type="text" name="search-value" list="animals-list">
+
+                <datalist class="dictionary_search_animals" id="animals-list"></datalist>
+
+                <button type="submit">
+                    <!-- <img src="../pics/search.png" alt="eine Lupe"> -->
+                    Suchen
+                </button>
+            </form>
+
+            <div class="section-container">
+        <!-- D -->
+             <section class="dictionary_section" data-section-alphabet="D">
+
+                <!-- Delphine -->
+                <div class="dictionary_card">
+                        <img src="../pics/tursipos.webp" alt="Delphin">
+    
+                        <div class="dictionary_card_heading-area">
+                            <h3>Delphine</h3>
+    
+                            <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                <img src="../pics/dots.png" alt="drei Punkte">
+                            </button>
+                        </div>
+    
+                        <div class="dictionary_card_content">
+                            <p>
+                                Die Delfine oder Delphine (Delphinidae) gehören zu den Zahnwalen (Odontoceti) und sind somit Säugetiere (Mammalia), die im Wasser leben (Meeressäuger). Delfine sind die vielfältigste und mit rund 40 Arten größte Familie der Wale (Cetacea). Sie sind in allen Meeren verbreitet, einige Arten kommen auch in Flüssen vor.
+                            </p>
+
+                            <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                <img src="../pics/less.png" alt="drei Bindestriche">
+                            </button>
+                        </div>
+                </div>
+            </section>
+
+        <!-- F -->
+            <section class="dictionary_section" data-section-alphabet="F">
+
+                <!-- Froschfisch -->
+                   <div class="dictionary_card">
+                        <img src="../pics/froschfisch.webp" alt="Froschfisch">
+    
+                        <div class="dictionary_card_heading-area">
+                            <h3>Froschfisch</h3>
+    
+                            <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                <img src="../pics/dots.png" alt="drei Punkte">
+                            </button>
+                        </div>
+    
+                        <div class="dictionary_card_content">
+                            <p>
+                                Froschfische (Batrachoididae) (vom griechischen batrachos = „Frosch“), auch Krötenfische genannt, sind bodenbewohnende Fische tropischer und subtropischer Regionen des Atlantik, des Indischen Ozeans und des Pazifik. Der Lusitanische Krötenfisch (Halobatrachus didactylus) kommt auch im Mittelmeer und an der Atlantikküste Südwesteuropas bis zur Biscaya vor. Einige Arten leben in Mittel- und Südamerika im Süßwasser.
+                            </p>
+    
+                            <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                <img src="../pics/less.png" alt="drei Bindestriche">
+                            </button>
+                        </div>
+                   </div>
+                </section>
+
+        <!-- S -->
+            <section class="dictionary_section" data-section-alphabet="S">
+
+            <!-- Steinkoralle-->
+               <div class="dictionary_card">
+                    <img src="../pics/coral-out.webp" alt="Steinkoralle">
+
+                    <div class="dictionary_card_heading-area">
+                        <h3>Steinkoralle</h3>
+
+                        <button class="dictionary_card_button-more" onclick="openContent(this)">
+                            <img src="../pics/dots.png" alt="drei Punkte">
+                        </button>
+                    </div>
+
+                    <div class="dictionary_card_content">
+                        <p>
+                            Steinkorallen (Scleractinia, früher Madreporaria) sind Tiere, die den Hauptanteil an der Entstehung der Korallenriffe haben, der artenreichsten marinen Lebensräume auf der Erde. Die meist winzigen, sessilen Tiere haben die Fähigkeit, an ihrer Basis Kalk abzuscheiden, und bilden so Riffe und im Laufe der Jahrtausende gewaltige Riffstrukturen. Viele Inseln, z. B. die Bahamas und Bermuda im Atlantik, die Malediven im Indischen Ozean oder Tuvalu und Kiribati im Pazifik sind durch das allmähliche Wachstum von Steinkorallen gebildet worden. Bei der Kalkbildung hilft den meisten Steinkorallen eine Symbiose mit Zooxanthellen, kleinen, einzelligen Algen aus der Gruppe der Dinoflagellaten, die auch für die Ernährung der Korallen wichtig sind.
+                        </p>
+
+                        <p>
+                            Alle Steinkorallen leben im Meer, die meisten in den Tropen. Sie sind sehr einfach gebaute Tiere und gehören, wie Quallen, zu den Nesseltieren (Cnidaria) und darin zu den Sechsstrahligen Blumentieren (Zoantharia). Ihre nächsten Verwandten sind die Seeanemonen (Actiniaria) und andere, weniger bekannte Gruppen. Mit den nicht riffbildenden Weichkorallen (Alcyonacea) sind sie nur entfernt, mit den ebenfalls riffbildenden Feuerkorallen (Milleporidae) nur sehr entfernt verwandt.
+                        </p>
+
+                        <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                            <img src="../pics/less.png" alt="drei Bindestriche">
+                        </button>
+                    </div>
+               </div>
+
+            <!-- Seepferd-->
+               <div class="dictionary_card">
+                <img src="../pics/seepferd.webp" alt="Seepferd">
+
+                <div class="dictionary_card_heading-area">
+                    <h3>Seepferd</h3>
+
+                    <button class="dictionary_card_button-more" onclick="openContent(this)">
+                        <img src="../pics/dots.png" alt="drei Punkte">
+                    </button>
+                </div>
+
+                <div class="dictionary_card_content">
+                    <p>
+                        Die Seepferdchen (Hippocampus[An 1]) gehören zu den Knochenfischen. Sie fallen besonders durch ihr Äußeres auf, das nur sehr wenig an andere Fische erinnert. Ihr Kopf ähnelt eher dem eines Pferdes, ihr Hinterleib einem Wurm. Gemeinsam mit den Fetzenfischen und weiteren Arten bilden sie die Familie der Seenadeln (Syngnathidae).
+                    </p>
+
+                    <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                        <img src="../pics/less.png" alt="drei Bindestriche">
+                    </button>
+                </div>
+           </div> 
+            </section>
+
+        <!-- V -->
+             <section class="dictionary_section" data-section-alphabet="V">
+
+                <!-- Viperfisch -->
+                   <div class="dictionary_card">
+                        <img src="../pics/viperfisch.webp" alt="Viperfisch">
+    
+                        <div class="dictionary_card_heading-area">
+                            <h3>Viperfisch</h3>
+    
+                            <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                <img src="../pics/dots.png" alt="drei Punkte">
+                            </button>
+                        </div>
+    
+                        <div class="dictionary_card_content">
+                            <p>
+                                Die Viperfische (Chauliodus) sind eine Gattung der Barten-Drachenfische (Stomiidae) und die einzige Gattung der Unterfamilie Chauliodontinae. Da ihnen die Barteln fehlen, stellen manche Ichthyologen sie in eine eigene Familie, die Chauliodontidae. Nach aktuellen Erkenntnissen[1] sind sie näher mit den Tiefsee-Beilfischen (Sternoptychidae) verwandt als mit den anderen Unterfamilien der Barten-Drachenfische. Viperfische sind Beutegreifer der Tiefsee. Sie sind hochspezialisiert für eine Existenz in diesem lebensfeindlich erscheinenden Lebensraum. Mit etwa 30 Zentimetern Körpergröße (maximal 35 cm) gehören sie zu den größeren, aber auch recht häufigen Fischen der oberen Tiefsee.
+                            </p>
+
+                            <p>
+                                Der Name Chauliodus bedeutet „Hauzähner“ (im Altgriech. wurden Tiere mit auffallend vorragenden Zähnen, „Hauern“, so bezeichnet, zum Beispiel das Nilpferd). 
+                            </p>
+    
+                            <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                <img src="../pics/less.png" alt="drei Bindestriche">
+                            </button>
+                        </div>
+                   </div>
+                </section>
+
+            <!-- Y -->
+                <section class="dictionary_section" data-section-alphabet="Y">
+
+                    <!-- Yeti-Krabbe -->
+                    <div class="dictionary_card">
+                            <img src="../pics/yeti_crab.webp" alt="Yeti Krabbe">
+        
+                            <div class="dictionary_card_heading-area">
+                                <h3>Yeti Krabbe</h3>
+        
+                                <button class="dictionary_card_button-more" onclick="openContent(this)">
+                                    <img src="../pics/dots.png" alt="drei Punkte">
+                                </button>
+                            </div>
+        
+                            <div class="dictionary_card_content">
+                                <p>
+                                    Die Yeti-Krabbe (Kiwa hirsuta, englisch yeti crab) ist eine Art der Krebstiere aus der Familie der Kiwaidae. Sie lebt auf den hydrothermalen Feldern der Tiefsee in etwa 2200 Metern Tiefe. Diese Felder sind durch Schlote, die sogenannten Schwarzen Raucher, charakterisiert. Zu ihrem Trivialnamen kam sie wegen ihrer gänzlich weißen Erscheinung und Borsten an den Gliedmaßen. Der Namensgeber war dabei das Fabelwesen Yeti.
+                                </p>
+
+                                <button class="dictionary_card_button-less" onclick="closeContent(this)">
+                                    <img src="../pics/less.png" alt="drei Bindestriche">
+                                </button>
+                            </div>
+                    </div>
+                </section>
+
+            <!-- dummy section for alphabet testing-->
+                <!-- <section class="dictionary_section" data-section-alphabet="Y">
+                </section>
+
+                <section class="dictionary_section" data-section-alphabet="D">
+                </section> -->
+
+            </div><!-- end section container-->
+        </main>
+
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+    </div>
+
+    <script src="../../src/js/dictionary.js"></script>
+    <script src="../../src/js/dictionary-mouse-n-observer.js"></script>
+    <script src="../../src/js/hamburger.js"></script>
+    <script src="../../src/js/header.js"></script>
+    <script src="../../src/js/sub-page-refresh.js"></script>
+   
+</body>
+</html>

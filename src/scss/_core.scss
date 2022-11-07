@@ -1,0 +1,195 @@
+//--- font-imports ---
+
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+@mixin font-heading-1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+
+@mixin font-main{
+    font-family: 'Lekton', sans-serif;
+    font-weight: 400;
+}
+
+@mixin font-heading-2{
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba($color: #000, $alpha: 0.5);
+}
+
+@mixin blockquote-font{
+    font-family: 'Special Elite', cursive;
+    font-weight: 400;
+}
+
+//--- resets and global styles ---
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    @include font-main();
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    all: initial;
+    box-sizing: border-box;
+    @include font-main();
+    font-size: 130%;
+    cursor: pointer;
+}
+
+button{
+    all: initial;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+//--- variables ---
+
+$color-background-blue: #94C4FB;
+
+$color-background-second: #B4D6FC;
+
+$color-main-triad-partner-1: #FCACA7;
+$color-main-triad-partner-2: #97CD9E;
+
+$color-font-dark: #314965;
+$color-font-dark-lighter: rgba(49, 73, 101, 0.3);
+$color-font-dark-2: #373737;
+$color-font-dark-2-lighter: rgba(55, 55, 55, 0.7);
+$color-font-light: #fff;
+$color-font-green: #CAFE37;
+
+
+//colors - blauer planet
+    $color-blue-dark: #0086E8;
+    $color-blue-light: #7DE5FA;
+
+
+
+//--- mixins ---
+
+//borders
+    @mixin testing-border-1{
+        border: 1px solid black;
+    }
+
+    @mixin testing-border-2{
+        border: 1px dashed black;
+    }
+
+    @mixin testing-border-3{
+        border: 1px dotted black;
+    }
+
+
+//box-shadows
+    @mixin box-shadow-default($color){
+        box-shadow: 1px 3px 6px $color;
+    }
+
+    @mixin box-shadow-glowing($color){
+        box-shadow: 0px 0px 5px $color;
+    }
+
+    @mixin box-shadow-inset($color){
+        box-shadow: 
+            3px 3px 6px $color inset;
+    }
+
+    @mixin box-shadow-inset-double($color){
+        box-shadow: 
+            3px 3px 6px $color inset,
+            -3px -3px 6px $color inset;
+    }
+
+
+//flex-box
+    @mixin flex-row-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;   
+        align-content: center;
+    }
+
+    @mixin flex-row-evenly{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;   
+        align-content: center;
+    }
+
+    @mixin flex-row-evenly-stretch{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    @mixin flex-row-single-stretch{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+
+    @mixin flex-column-center{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;   
+        align-content: center;
+    }
+
+    @mixin flex-variable($direction, $wrap, $justy, $align, $align-content){
+        display: flex;
+        flex-direction: $direction;
+        flex-wrap: $wrap;
+        justify-content: $justy;
+        align-items: $align;
+        align-content: $align-content;
+    }
+
+
+//stack
+    @mixin stack-10{
+        position: relative;
+        z-index: 10;
+    }
+
+
+//glas
+    @mixin glas-1{
+        background: rgba( 255, 255, 255, 0.2 );
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+    }
+
+
+//background image
+    @mixin background-image($url){
+         background: url($url) center center / cover no-repeat;
+    }
